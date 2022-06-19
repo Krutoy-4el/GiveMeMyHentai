@@ -1,7 +1,7 @@
 /**
  * @name GiveMeMyHentai
  * @shortName GMMH
- * @version 0.3.0
+ * @version 0.4.0
  * @description This is a plugin which allows you to bypass Discord's age restrictions.
  * 
  * @author K4
@@ -25,7 +25,7 @@ class GiveMeMyHentai {
     getName() { return "GiveMeMyHentai"; }
     getShortName() { return "GMMH"; }
     getDescription() { return "This is a plugin which allows you to bypass Discord's age restrictions."; }
-    getVersion() { return "0.3.0"; }
+    getVersion() { return "0.4.0"; }
     getAuthor() { return "K4"; }
 
     start() {
