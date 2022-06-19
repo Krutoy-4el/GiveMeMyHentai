@@ -22,7 +22,16 @@ class GiveMeMyHentai {
 
     start() {
         if (typeof ZeresPluginLibrary !== "undefined") this.initialize();
-        else console.error(this.getName() + ": [FATAL]: No ZeresLib!");
+        else {
+            BdApi.showConfirmationModal(
+                "ZeresPluginLibrary is missing",
+                [
+                    this.getName() + " needs it to operate.",
+                    "Do you want to download it?"
+                ],
+                {onConfirm: () => this.download_zeres_library()}
+            );
+        }
     }
 
     stop() {
@@ -33,6 +42,15 @@ class GiveMeMyHentai {
             }
             ZeresPluginLibrary.DiscordModules.Dispatcher.unsubscribe('CHANNEL_SELECT', this._callback);
         }
+    }
+
+    async download_zeres_library() {
+        let fs = require("fs");
+        let path = require("path");
+        let req = await fetch("https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js");
+        let data = await req.text();
+        fs.writeFileSync(path.join(BdApi.Plugins.folder, "0PluginLibrary.plugin.js"), data);
+        setTimeout(() => this.start(), 1000);
     }
 
     initialize() {
