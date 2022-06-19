@@ -1,10 +1,12 @@
 /**
  * @name GiveMeMyHentai
  * @shortName GMMH
- * @version 0.4.0
- * @description This is a plugin which allows you to bypass Discord's age restrictions.
+ * @version 0.4.1
+ * @description This is a plugin which allows you to bypass age restrictions in NSFW channels.
  * 
  * @author K4
+ * @source https://github.com/Krutoy-4el/GiveMeMyHentai
+ * @updateUrl https://raw.githubusercontent.com/Krutoy-4el/GiveMeMyHentai/master/GiveMeMyHentai.plugin.js
  */
 
 class GiveMeMyHentai {
@@ -24,8 +26,8 @@ class GiveMeMyHentai {
     // Meta
     getName() { return "GiveMeMyHentai"; }
     getShortName() { return "GMMH"; }
-    getDescription() { return "This is a plugin which allows you to bypass Discord's age restrictions."; }
-    getVersion() { return "0.4.0"; }
+    getDescription() { return "This is a plugin which allows you to bypass age restrictions in NSFW channels."; }
+    getVersion() { return "0.4.1"; }
     getAuthor() { return "K4"; }
 
     start() {
