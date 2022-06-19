@@ -1,7 +1,13 @@
-//META{"name":"GiveMeMyHentai"}*//
+/**
+ * @name GiveMeMyHentai
+ * @shortName GMMH
+ * @version 0.2.0
+ * @description This is a plugin which allows you to bypass Discord's age restrictions.
+ * 
+ * @author K4
+ */
 
 class GiveMeMyHentai {
-    // Constructor
     constructor() {
         this.initialized = false;
     }
@@ -13,31 +19,6 @@ class GiveMeMyHentai {
     getVersion() { return "0.2.0"; }
     getAuthor() { return "K4"; }
 
-    // Settings  Panel
-    // getSettingsPanel() {
-    //     return "<!--Enter Settings Panel Options, just standard HTML-->";
-    // }
-    
-    // Load/Unload
-    load() { }
-
-    unload() { }
-
-    // Events
-
-    onMessage() {
-        // Called when a message is received
-    };
-    
-    onSwitch() {
-        // Called when a server or channel is switched
-    };
-
-    observer(e) {
-        // raw MutationObserver event for each mutation
-    };
-    
-    // Start/Stop
     start() {
         if (typeof ZeresPluginLibrary !== "undefined") this.initialize();
         else console.error(this.getName() + ": [FATAL]: No ZeresLib!");
