@@ -5,8 +5,8 @@
  * @description This is a plugin which allows you to bypass age restrictions in NSFW channels.
  * 
  * @author K4
- * @source https://github.com/Krutoy-4el/GiveMeMyHentai
- * @updateUrl https://raw.githubusercontent.com/Krutoy-4el/GiveMeMyHentai/master/GiveMeMyHentai.plugin.js
+ * @source https://github.com/Krutyi-4el/GiveMeMyHentai
+ * @updateUrl https://raw.githubusercontent.com/Krutyi-4el/GiveMeMyHentai/master/GiveMeMyHentai.plugin.js
  */
 
 class GiveMeMyHentai {
