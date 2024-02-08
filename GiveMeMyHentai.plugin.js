@@ -1,7 +1,7 @@
 /**
  * @name GiveMeMyHentai
  * @shortName GMMH
- * @version 0.4.1
+ * @version 0.4.2
  * @description This is a plugin which allows you to bypass age restrictions in NSFW channels.
  * 
  * @author Sóla Lusøt
