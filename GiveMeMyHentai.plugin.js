@@ -4,9 +4,9 @@
  * @version 0.4.1
  * @description This is a plugin which allows you to bypass age restrictions in NSFW channels.
  * 
- * @author K4
- * @source https://github.com/Krutyi-4el/GiveMeMyHentai
- * @updateUrl https://raw.githubusercontent.com/Krutyi-4el/GiveMeMyHentai/master/GiveMeMyHentai.plugin.js
+ * @author Sóla Lusøt
+ * @source https://github.com/solaluset/GiveMeMyHentai
+ * @updateUrl https://raw.githubusercontent.com/solaluset/GiveMeMyHentai/master/GiveMeMyHentai.plugin.js
  */
 
 class GiveMeMyHentai {
@@ -27,8 +27,8 @@ class GiveMeMyHentai {
     getName() { return "GiveMeMyHentai"; }
     getShortName() { return "GMMH"; }
     getDescription() { return "This is a plugin which allows you to bypass age restrictions in NSFW channels."; }
-    getVersion() { return "0.4.1"; }
-    getAuthor() { return "K4"; }
+    getVersion() { return "0.4.2"; }
+    getAuthor() { return "Sóla Lusøt"; }
 
     start() {
         if (typeof ZeresPluginLibrary !== "undefined") this.initialize();
